@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body">
+        Lista de cursos
+    </div>
+
+    <ul class="list-group" *ngIf="habil">
+        <li class="list-group-item" *ngFor="let curso of lista">{{curso}}</li>
+    </ul>
+
+    <button type="button" class="btn btn-primary" (click)="habil= (habil==true)?false:true;">Mostrar</button>
+
+</div>
